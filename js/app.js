@@ -21,11 +21,11 @@ class Player {
 
   showKill(kill) {
     this.alive = false;
-    console.log(this.alive);
+    console.log(`вы живы:  ${this.alive}`);
   }
 
 showAlive(){
-  console.log(this.alive);
+  console.log(`вы живы:  ${this.alive}`);
 }
 
   showExp() {
@@ -63,16 +63,15 @@ showAlive(){
 }
 
 const Franklin = new Player("Franklin", "black");
+Franklin;
 Franklin.showName();
 Franklin.showExp();
-Franklin.showAlive();
 Franklin.levelUpgrade(100);
 Franklin.showLvl();
 Franklin.upWeapon(3);
 Franklin.showWeapon();
 Franklin.showSkin();
 Franklin.showExp();
-Franklin;
 
 const Michael = new Player("Michael", "white");
 Michael.showName();
